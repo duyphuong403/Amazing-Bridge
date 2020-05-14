@@ -1,0 +1,1188 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>TOP AMAZING BRIDGE</title>
+    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script&amp;subset=latin-ext" rel="stylesheet">
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./carousel_fade.css">
+    <link rel="stylesheet" href="./node_modules/font-awesome/css/font-awesome.min.css">
+    <script type="text/javascript" src="./node_modules/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.13.1/jquery.validate.min.js"></script>
+    <script type="text/javascript" src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="./node_modules/angular/angular.min.js" type="text/javascript"></script>
+    <script type="text/javascript" src="./node_modules/sweetalert/dist/sweetalert.min.js"></script>
+
+    <script type="text/javascript" src="./js/shuffle.js"></script>
+    <script type="text/javascript" src="./js/scrollpage.js"></script>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
+    <script type="text/javascript" src="./js/map.js"></script>
+    <script type="text/javascript" src="./js/fixednavbar.js"></script>
+    <script type="text/javascript" src="./js/validationform.js"></script>
+    <script type="text/javascript">
+        $(this).dialog('destroy').remove();
+    </script>
+</head>
+
+<body data-spy="scroll" id="page-top" data-target=".navbar" data-offset="50" onload="document.getElementById('defaultOpen').click();">
+    <!-- Button back top -->
+    <a id="button"></a>
+    <script>
+        var btn = $('#button');
+        $(window).scroll(function () {
+            if ($(window).scrollTop() > 300) {
+                btn.addClass('show');
+            } else {
+                btn.removeClass('show');
+            }
+        });
+
+        btn.on('click', function (e) {
+            e.preventDefault();
+            $('html, body').animate({
+                scrollTop: 0
+            }, '300');
+        });
+    </script>
+    <!-- Navbar -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbarResponsive">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#page-top">AMAZING BRIDGE</a>
+            </div>
+            <div>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="nav navbar-nav">
+                        <li>
+                            <a class="nav-link" href="#amazing-bridge">Amazing Bridges</a>
+                        </li>
+                        <li>
+                            <a class="nav-link" href="#timeline">Timeline</a>
+                        </li>
+                        <li>
+                            <a class="nav-link" href="#booking">Booking</a>
+                        </li>
+                        <li>
+                            <a class="nav-link" href="#our-team">Team</a>
+                        </li>
+                        <li>
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- Slider Section -->
+    <div class="home_slider">
+        <div id="carouselFade" class="carousel slide carousel-fade" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol>
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner">
+                <div class="item active">
+                    <img class="d-block w-100" src="./Images/Slider/golden_gate.jpg" alt="Golden Gate">
+                    <div class="carousel-caption">
+                        <h1>Golden Gate</h1>
+                        <p>The iconic bridge synonymous with San Francisco is considered by some to be the most beautiful bridge
+                            in the world. The American Society of Civil Engineers has named it one of the Wonders of the
+                            Modern World (though honestly, they may be a bit biased). </p>
+                    </div>
+                </div>
+                <div class="item">
+                    <img class="d-block w-100" src="./Images/Slider/london_bridge.jpg" alt="London Tower Bridge">
+                    <div class="carousel-caption">
+                        <h1>London Tower Bridge</h1>
+                        <p>Due to increased commerce around the middle of the 19th century, London needed a new bridge. A competition
+                            was held, and while it took seven years to make a decision, eventually Horace Jones, who also
+                            happened to be one of the judges, was named the winner. </p>
+                    </div>
+                </div>
+                <div class="item">
+                    <img class="d-block w-100" src="./Images/Slider/vasco.jpg" alt="Vasco The Gamma Bridge">
+                    <div class="carousel-caption">
+                        <h3>Vasco The Gamma Bridge</h3>
+                        <p>Opened to the public on 29 March 1998, it was named after the most important Portuguese discoverer;
+                            Vasco da Gama. It commemorates the fifth centenary of his arrival from India in 1498. Gama was
+                            the first European to reach India by sea, from the Atlantic Ocean.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Left and right controls -->
+            <a class="left carousel-control" href="#carouselFade" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#carouselFade" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+        <script>
+            $(document).ready(function () {
+                $('.carousel').carousel({
+                    interval: 3000
+                })
+            });
+        </script>
+    </div>
+    <!--Begin Section 1-->
+    <div id="amazing-bridge" class="container-fluid">
+        <!-- MAIN (Center website) -->
+        <div class="main">
+            <h2>THE MOST AMAZING BRIDGES IN THE WORLD</h2>
+            <div align="center">
+                <button class="btn btn-default filter-button" data-filter="all">Show All</button>
+                <button class="btn btn-default filter-button" data-filter="tallest">Tallest</button>
+                <button class="btn btn-default filter-button" data-filter="longest">Longest</button>
+                <button class="btn btn-default filter-button" data-filter="highest">Highest</button>
+                <button class="btn btn-default filter-button" data-filter="oldest">Oldest</button>
+            </div>
+            <!-- Portfolio Gallery Grid -->
+            <!--1. Danyang-Kunshan Grand -->
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 filter longest">
+                    <div class="content">
+                        <img src="./Images/Portfolio/10.jpg" alt="THE U BEIN BRIDGE" class="portfolio">
+                        <h4>Danyang-Kunshan Grand</h4>
+                        <p class="info-main">The bridge is located on the...</p>
+                        <!-- Trigger the modal with a button -->
+                        <button type="button" class="btn btn-info btn-xs" data-toggle="modal" data-target="#myModal-10">Show All</button>
+                        <!-- Modal -->
+                        <div class="modal fade" id="myModal-10" role="dialog">
+                            <div class="modal-dialog">
+
+                                <!-- Modal content-->
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                        <h4 class="modal-title">Danyang–Kunshan Grand</h4>
+                                        <img src="./Images/Portfolio/10.jpg">
+                                    </div>
+                                    <div class="modal-body">
+                                        <button class="accordion_model" id="defaultOpen">Information</button>
+                                        <div class="panel">
+                                            <p>
+                                                The bridge is located on the rail line between Shanghai and Nanjing in East Chinaís Jiangsu province. It is in the Yangtze
+                                                River Delta where the geography is characterized by lowland rice paddies,
+                                                canals, rivers, and lakes. The bridge runs roughly parallel to the Yangtze
+                                                River, about 8 to 80 km (5 to 50 mi) south of the river. It passes through
+                                                the northern edges of population centers (from west to east) beginning in
+                                                Danyang, Changzhou, Wuxi, Suzhou, and ending in Kunshan. There is a 9-kilometre
+                                                long (5.6 mi) section over open water across Yangcheng Lakein Suzhou.
+                                                <br/>
+                                                <br/> It was completed in 2010 and opened in 2011. Employing 10,000 people, construction
+                                                took four years and cost about $8.5 billion. The Danyang Kunshan Grand Bridge
+                                                currently holds the Guinness World Record for the longest bridge in the world
+                                                in any category as of June 2011.
+                                            </p>
+                                        </div>
+                                        <button class="accordion_model">Location</button>
+                                        <div class="panel">
+                                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d36221.457671614946!2d119.56336789876356!3d32.036459845488416!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35b43020b843b34b%3A0xb09669f9d23089bc!2sDanyang+Bridge!5e0!3m2!1svi!2s!4v1530173059867"
+                                                width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                                        </div>
+                                        <button class="accordion_model">Feedback</button>
+                                        <div class="panel">
+                                            <form method="post" action="" onsubmit="return validateFeedback()">
+                                                <textarea id="comment" rows="10" cols="20" placeholder="Enter Comment" onclick='this.value = ""' required></textarea>
+                                                <button class="button-enter" value="submit">Enter</button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--2. Tianjin Grand Bridge -->
+                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 filter longest">
+                    <div class="content ">
+                        <img src="./Images/Portfolio/11.jpg " alt="THE U BEIN BRIDGE " class="portfolio">
+                        <h4>Tianjin Grand Bridge</h4>
+                        <p class="info-main ">Tianjin Grand Bridge is a...</p>
+                        <!-- Trigger the modal with a button -->
+                        <button type="button" class="btn btn-info btn-xs" data-toggle="modal" data-target="#myModal-11">Show All</button>
+                        <!-- Modal -->
+                        <div class="modal fade" id="myModal-11" role="dialog">
+                            <div class="modal-dialog">
+                                <!-- Modal content-->
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                        <h4 class="modal-title ">Tianjin Grand Bridge</h4>
+                                        <img src="./Images/Portfolio/11.jpg ">
+                                    </div>
+                                    <div class="modal-body">
+                                        <button class="accordion_model" id="defaultOpen">Information</button>
+                                        <div class="panel">
+                                            <p>
+                                                Tianjin Grand Bridge is a railway viaduct bridge that runs between Langfang and Qingxian, part of the Beijing Shanghai High-Speed
+                                                Railway. It is one of the longest bridges in the world with a total length
+                                                of about 113,700m, or 70.6 miles. It was completed in 2010 and opened in
+                                                2011. As of 2011 Guinness World Records recorded it as the second longest
+                                                bridge in the world.
+                                            </p>
+                                        </div>
+                                        <button class="accordion_model">Location</button>
+                                        <div class="panel">
+                                            <iframe src="http://www.google.cn/maps/embed?pb=!1m14!1m8!1m3!1d12392.461741889832!2d117.0714284921875!3d39.05828341800164!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35ee0ec4020f1551%3A0x5afda1b7eeee6a78!2sSouth+Railway+Station!5e0!3m2!1sen!2scn!4v1530184674853 "
+                                                width="100%" height="450 " frameborder="0 " style="border:0 " allowfullscreen></iframe>
+                                        </div>
+                                        <button class="accordion_model">Feedback</button>
+                                        <div class="panel">
+                                            <form method="post" action="" onsubmit="return validateFeedback()">
+                                                <textarea id="comment" rows="10" cols="20" placeholder="Enter Comment" onclick='this.value = ""' value="" required></textarea>
+                                                <button class="button-enter" value="submit">Enter</button>
+                                            </form>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--3. Lake Pontchartrain Causeway -->
+                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 filter longest">
+                    <div class="content">
+                        <img src="./Images/Portfolio/12.jpg" alt="THE U BEIN BRIDGE" class="portfolio">
+                        <h4>Lake Pontchartrain Causeway</h4>
+                        <p class="info-main ">The Lake Pontchartrain Causeway,...</p>
+                        <!-- Trigger the modal with a button -->
+                        <button type="button " class="btn btn-info btn-xs" data-toggle="modal" data-target="#myModal-12 ">Show All</button>
+                        <!-- Modal -->
+                        <div class="modal fade" id="myModal-12" role="dialog">
+                            <div class="modal-dialog ">
+                                <!-- Modal content-->
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                        <h4 class="modal-title">Lake Pontchartrain Causeway</h4>
+                                        <img src="./Images/Portfolio/12.jpg ">
+                                    </div>
+                                    <div class="modal-body">
+                                        <button class="accordion_model" id="defaultOpen">Information</button>
+                                        <div class="panel">
+                                            <p>
+                                                The Lake Pontchartrain Causeway, sometimes only the Causeway, is a fixed link composed of two parallel bridges crossing Lake
+                                                Pontchartrain in southern Louisiana, United States. The longer of the two
+                                                bridges is 23.83 miles (38.35 km) long. The southern terminus of the Causeway
+                                                is in Metairie, Louisiana, a suburb of New Orleans. The northern terminus
+                                                is at Mandeville, Louisiana.
+                                                <br/>
+                                                <br/> Since 1969, it was listed by Guinness World Records as the longest bridge
+                                                over water in the world; in 2011, in response to the opening of the allegedly
+                                                longer Jiaozhou Bay Bridge in China, Guinness World Records created two categories
+                                                for bridges over water: continuous and aggregate lengths over water. Lake
+                                                Pontchartrain Causeway then became the longest bridge over water (continuous)
+                                                while Jiaozhou Bay Bridge the longest bridge over water (aggregate).
+                                                <br/>
+                                                <br/> The bridges are supported by 9,500 concrete pilings. The two bridges feature
+                                                a bascule, which spans the navigation channel 8 miles (13 km) south of the
+                                                north shore.
+                                            </p>
+                                        </div>
+                                        <button class="accordion_model">Location</button>
+                                        <div class="panel">
+                                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d220708.04224322987!2d-90.26425778551267!3d30.192470281828673!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x862752ee2d94f1b1%3A0x43e3b1fd254ec41d!2sLake+Pontchartrain+Causeway%2C+New+Orleans%2C+LA+70124%2C+Hoa+K%E1%BB%B3!5e0!3m2!1svi!2s!4v1530184918487 "
+                                                width="100% " height="450 " frameborder="0 " style="border:0 " allowfullscreen></iframe>
+                                        </div>
+                                        <button class="accordion_model ">Feedback</button>
+                                        <div class="panel">
+                                            <form method="post" action="" onsubmit="return validateFeedback()">
+                                                <textarea id="comment" rows="10" cols="20" placeholder="Enter Comment" onclick='this.value = ""' required></textarea>
+                                                <button class="button-enter" value="submit">Enter</button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--4. GOLDEN GATE BRIDGE -->
+                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 filter tallest">
+                    <div class="content">
+                        <img src="./Images/Portfolio/1.jpg" alt="GOLDEN GATE BRIDGE" class="portfolio">
+                        <h4>GOLDEN GATE BRIDGE</h4>
+                        <p class="info-main ">The Golden Gate Bridge is a...</p>
+                        <!--Modal Button Detail-->
+                        <!-- Trigger the modal with a button -->
+                        <button type="button" class="btn btn-info btn-xs" data-toggle="modal" data-target="#myModal-1">Show All</button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="myModal-1" role="dialog">
+                            <div class="modal-dialog ">
+
+                                <!-- Modal content-->
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close " data-dismiss="modal">&times;</button>
+                                        <h4 class="modal-title">The Golden Gate</h4>
+                                        <img src="./Images/Portfolio/1.jpg">
+                                    </div>
+                                    <div class="modal-body">
+                                        <button class="accordion_model" id="defaultOpen">Information</button>
+                                        <div class="panel ">
+                                            <p>
+                                                The Golden Gate Bridge is a suspension bridge spanning the Golden Gate, the one-mile-wide (1.6 km) strait connecting San
+                                                Francisco Bay and the Pacific Ocean. The structure links the American city
+                                                of San Francisco, California the northern tip of the San Francisco Peninsula
+                                                to Marin County, carrying both U.S. Route 101 and California State Route
+                                                1 across the strait.
+                                                <br/>
+                                                <br/> The bridge is one of the most internationally recognized symbols of San
+                                                Francisco, California, and the United States. It has been declared one of
+                                                the Wonders of the Modern World by the American Society of Civil Engineers.
+                                                <br/>
+                                                <br/> The Frommer's travel guide describes the Golden Gate Bridge as "possibly
+                                                the most beautiful, certainly the most photographed, bridge in the world.
+                                                At the time of its opening in 1937, it was both the longest and the tallest
+                                                suspension bridge in the world, with a main span of 4,200 feet (1,280 m)
+                                                and a total height of 746 feet (227 m). </p>
+                                        </div>
+
+                                        <button class="accordion_model">Location</button>
+                                        <div class="panel">
+                                            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12606.896798382611!2d-122.4782551!3d37.8199286!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xcded139783705509!2sGolden+Gate+Bridge!5e0!3m2!1sen!2s!4v1530159659288"
+                                                width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                                        </div>
+
+                                        <button class="accordion_model">Feedback</button>
+                                        <div class="panel">
+                                            <form method="post" action="" onsubmit="return validateFeedback()">
+                                                <textarea id="comment" rows="10" cols="20" placeholder="Enter Comment" onclick='this.value = ""' required></textarea>
+                                                <button class="button-enter" value="submit">Enter</button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                    </div>
+                                    <!--End modal-body-->
+                                </div>
+                                <!--End modal-dialog-->
+                            </div>
+                            <!--End Modal-->
+                        </div>
+                        <!--End Content-->
+                    </div>
+                </div>
+                <!--5. AKASHI KAIKYO -->
+                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 filter tallest">
+                    <div class="content">
+                        <img src="./Images/Portfolio/2.jpg" alt="AKASHI KAIKYO" class="portfolio">
+                        <h4>AKASHI KAIKYO</h4>
+                        <p class="info-main">The Akashi Kaiky Bridge is a...</p>
+                        <!-- Trigger the modal with a button -->
+                        <button type="button" class="btn btn-info btn-xs" data-toggle="modal" data-target="#myModal-2">Show All</button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="myModal-2" role="dialog">
+                            <div class="modal-dialog">
+
+                                <!-- Modal content-->
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                        <h4 class="modal-title">Akashi Kaikyo Bridge</h4>
+                                        <img src="./Images/Portfolio/2.jpg">
+                                    </div>
+                                    <div class="modal-body">
+                                        <button class="accordion_model" id="defaultOpen">Information</button>
+                                        <div class="panel">
+                                            <p>
+                                                The bridge has three spans. The central span is 1,991 m (6,532 ft; 1.237 mi),[1] and the two other sections are each 960
+                                                m (3,150 ft; 0.60 mi). The bridge is 3,911 m (12,831 ft; 2.430 mi) long overall.
+                                                The two towers were originally 1,990 m (6,530 ft; 1.24 mi) apart, but the
+                                                Great Hanshin earthquake on January 17, 1995, moved the towers so much (only
+                                                the towers had been erected at the time) that the span had to be increased
+                                                by 1 m (3.3 ft).
+                                                <br>
+                                                <br> The bridge was designed with a dual-hinged stiffening girder system, allowing
+                                                the structure to withstand winds of 286 kilometres per hour (178 mph), earthquakes
+                                                measuring up to magnitude 8.5, and harsh sea currents. The bridge also contains
+                                                tuned mass dampers that are designed to operate at the resonance frequency
+                                                of the bridge to dampen forces. The two main supporting towers rise 282.8
+                                                m (928 ft) above sea level, and the bridge can expand because of heat by
+                                                up to 2 m (6.6 ft) over the course of a day. Each anchorage required 350,000
+                                                tonnes (340,000 long tons; 390,000 short tons) of concrete. The steel cables
+                                                have 300,000 kilometres (190,000 mi) of wire: each cable is 112 centimetres
+                                                (44 in) in diameter and contains 36,830 strands of wire.
+                                                <br>
+                                                <br> The Akashi–Kaikyo bridge has a total of 1,737 illumination lights: 1,084
+                                                for the main cables, 116 for the main towers, 405 for the girders and 132
+                                                for the anchorages. Sets of three high-intensity discharge lamps in the colors
+                                                red, green and blue are mounted on the main cables. The RGB colour model
+                                                and computer technology make for a variety of combinations. Twenty-eight
+                                                patterns are used for occasions as national or regional holidays, memorial
+                                                days or festivities.
+                                                <br>
+                                                <br>
+                                            </p>
+                                        </div>
+
+                                        <button class="accordion_model">Location</button>
+                                        <div class="panel">
+                                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d19865.69426841389!2d135.00637910966037!3d34.61549117320812!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6000824134f53bcd%3A0xaeaac1c733d78c3f!2sC%E1%BA%A7u+Akashi-Kaikyo!5e0!3m2!1svi!2s!4v1530185592074"
+                                                width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                                        </div>
+
+                                        <button class="accordion_model">Feedback</button>
+                                        <div class="panel">
+                                            <form method="post" action="" onsubmit="return validateFeedback()">
+                                                <textarea id="comment" rows="10" cols="20" placeholder="Enter Comment" onclick='this.value = ""' required></textarea>
+                                                <button class="button-enter" value="submit">Enter</button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--6. PONT DU GARD -->
+                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 filter tallest">
+                    <div class="content">
+                        <img src="./Images/Portfolio/3.jpg" alt="PONT DU GARD" class="portfolio">
+                        <h4>PONT DU GARD</h4>
+                        <p class="info-main">The Pont du Gard is an...</p>
+                        <!-- Trigger the modal with a button -->
+                        <button type="button" class="btn btn-info btn-xs" data-toggle="modal" data-target="#myModal-3">Show All</button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="myModal-3" role="dialog">
+                            <div class="modal-dialog">
+
+                                <!-- Modal content-->
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                        <h4 class="modal-title">Pont du Gard Bridge</h4>
+                                        <img src="./Images/Portfolio/3.jpg">
+                                    </div>
+                                    <div class="modal-body ">
+                                        <button class="accordion_model " id="defaultOpen ">Information</button>
+                                        <div class="panel ">
+                                            <img src="./Images/Portfolio/3.jpg ">
+                                            <p>
+                                                The Pont du Gard is an ancient Roman aqueduct that crosses the Gardon River near the town of Vers-Pont-du-Gard in Southern
+                                                France. The Pont du Gard is the highest of all elevated Roman aqueducts,
+                                                and, along with the Aqueduct of Segovia, one of the best preserved. It was
+                                                added to UNESCO's list of World Heritage Sites in 1985 because of its historical
+                                                importance.
+                                                <br/>
+                                                <br/> The aqueduct bridge is part of the NÓmes aqueduct, a 50-kilometre (31 mi)
+                                                system built in the first century AD to carry water from a spring at UzËs
+                                                to the Roman colony of Nemausus (NÓmes). Because of the uneven terrain between
+                                                the two points, the mostly underground aqueduct followed a long, winding
+                                                route that called for a bridge across the gorge of the Gardon River.
+                                                <br/>
+                                                <br/> The bridge has three tiers of arches, stands 48.8 m (160 ft) high, and descends
+                                                a mere 2.5 centimetres (1 in) a gradient of only 1 in 18,241 while the whole
+                                                aqueduct descends in height by only 12.6 m (41 ft) over its entire length,
+                                                which is indicative of the great precision that Roman engineers were able
+                                                to achieve, using simple technology. The aqueduct formerly carried an estimated
+                                                40,000 m3 (8,800,000 imp gal) of water a day to the fountains, baths and
+                                                homes of the citizens of NÓmes. It may have been in use as late as the 6th
+                                                century, with some parts used for significantly longer, but a lack of maintenance
+                                                after the 4th century led to clogging by mineral deposits and debris that
+                                                eventually choked off the flow of water.
+                                                <br/>
+                                                <br/> After the Roman Empire collapsed and the aqueduct fell into disuse, the
+                                                Pont du Gard remained largely intact, due to the importance of its secondary
+                                                function, as a toll bridge. For centuries the local lords and bishops were
+                                                responsible for its upkeep, in exchange for the right to levy tolls on travellers
+                                                using it to cross the river, although some of its stones were looted and
+                                                serious damage was inflicted on it in the 17th century. It attracted increasing
+                                                attention starting in the 18th century, and became an important tourist destination.
+                                                <br/>
+                                                <br/> It underwent a series of renovations between the 18th and 21st centuries,
+                                                commissioned by the local authorities and the French state, that culminated
+                                                in 2000 with the opening of a new visitor centre and the removal of traffic
+                                                and buildings from the bridge and the area immediately around it. Today it
+                                                is one of France's most popular tourist attractions, and has attracted the
+                                                attention of a succession of literary and artistic visitors.
+                                            </p>
+                                        </div>
+
+                                        <button class="accordion_model">Location</button>
+                                        <div class="panel">
+                                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2872.5701086472286!2d4.532771315340821!3d43.9475698413638!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12b5c8c248e704d5%3A0x26b17319f386eae2!2sPont+du+Gard!5e0!3m2!1svi!2s!4v1530185726457"
+                                                width="100% " height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                                        </div>
+
+                                        <button class="accordion_model">Feedback</button>
+                                        <div class="panel">
+                                            <form method="post" action="" onsubmit="return validateFeedback()">
+                                                <textarea id="comment" rows="10" cols="20" placeholder="Enter Comment" onclick='this.value = ""' required></textarea>
+                                                <button class="button-enter" value="submit">Enter</button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--7. ROEBLING SUSPENSION -->
+                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 filter oldest ">
+                    <div class="content ">
+                        <img src="./Images/Portfolio/4.jpg " alt="ROEBLING SUSPENSION BRIDGE " class="portfolio">
+                        <h4>ROEBLING SUSPENSION</h4>
+                        <p class="info-main">The John A. Roebling Suspension Bridge...</p>
+                        <!-- Trigger the modal with a button -->
+                        <button type="button" class="btn btn-info btn-xs" data-toggle="modal" data-target="#myModal-4">Show All</button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="myModal-4" role="dialog">
+                            <div class="modal-dialog">
+
+                                <!-- Modal content-->
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                        <h4 class="modal-title ">Roebling Suspension Bridge</h4>
+                                        <img src="./Images/Portfolio/4.jpg">
+                                    </div>
+                                    <div class="modal-body">
+                                        <button class="accordion_model" id="defaultOpen">Information</button>
+                                        <div class="panel">
+                                            <p>
+                                                The John A. Roebling Suspension Bridge, originally known as the Cincinnati-Covington Bridge spans the Ohio River between
+                                                Cincinnati, Ohio and Covington, Kentucky. When opened on December 1, 1866,
+                                                it was the longest suspension bridge in the world at 1,057 feet (322 m) main
+                                                span. Pedestrians use the bridge to get between the sports venues in Cincinnati
+                                                (Paul Brown Stadium, Great American Ball Park, and U.S. Bank Arena) and the
+                                                hotels, bars, restaurants, and parking lots in Northern Kentucky. The bar
+                                                and restaurant district at the foot of the bridge on the Kentucky side is
+                                                known as Roebling Point.
+                                                <br/>
+                                                <br/> Ramps were constructed leading directly from the bridge to the Dixie Terminal
+                                                building used for streetcars. These provided Covington Cincinnati streetcars
+                                                "with a grade-separated route to the center of downtown, and the terminal
+                                                building was originally intended to connect, via underground pedestrian passages,
+                                                with the never-built Fountain Square Station of the infamous Cincinnati Subway.
+                                                When streetcar service ceased in the 1950s, the terminal was converted to
+                                                a diesel bus terminal. The ramps were removed in 1998 when it ceased being
+                                                used as a bus terminal.
+                                            </p>
+                                        </div>
+
+                                        <button class="accordion_model">Location</button>
+                                        <div class="panel">
+                                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3096.591709695728!2d-84.51205298479917!3d39.09299684299611!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8841b1467a3f51bd%3A0x9cdf97bb8316bfb7!2sJohn+A.+Roebling+Suspension+Bridge!5e0!3m2!1svi!2s!4v1530185928686"
+                                                width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                                        </div>
+
+                                        <button class="accordion_model">Feedback</button>
+                                        <div class="panel">
+                                            <form method="post" action="" onsubmit="return validateFeedback()">
+                                                <textarea id="comment" rows="10" cols="20" placeholder="Enter Comment" onclick='this.value = ""' required></textarea>
+                                                <button class="button-enter" value="submit">Enter</button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--8. ROLLING BRIDGE -->
+                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 filter oldest">
+                    <div class="content">
+                        <img src="./Images/Portfolio/5.jpg" alt="ROLLING BRIDGE" class="portfolio">
+                        <h4>ROLLING BRIDGE</h4>
+                        <p class="info-main">The Rolling Bridge is a...</p>
+                        <!-- Trigger the modal with a button -->
+                        <button type="button" class="btn btn-info btn-xs" data-toggle="modal" data-target="#myModal-5">Show All</button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="myModal-5" role="dialog">
+                            <div class="modal-dialog">
+
+                                <!-- Modal content-->
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                        <h4 class="modal-title">The Rolling Bridge</h4>
+                                        <img src="./Images/Portfolio/5.jpg">
+                                    </div>
+                                    <div class="modal-body">
+                                        <button class="accordion_model" id="defaultOpen">Information</button>
+                                        <div class="panel">
+                                            <p>
+                                                The Rolling Bridge is a type of curling movable bridge completed in 2004 as part of the Grand Union Canal office and retail
+                                                development project at Paddington Basin, London. Despite the connotation
+                                                of its name, it is more accurately described as "curling".
+                                                <br/>
+                                                <br/> The Rolling Bridge was conceived by British designer Thomas Heatherwick,
+                                                designed by SKM Anthony Hunt with Packman Lucas, and built by Littlehampton
+                                                Welding Ltd. The Hydraulic design and development was done by Primary Fluid
+                                                Power Ltd in the North West.
+                                                <br/>
+                                                <br/> The bridge consists of eight triangular sections hinged at the walkway level
+                                                and connected above by two-part links that can be collapsed towards the deck
+                                                by hydraulic cylinders, which are concealed in vertical posts in the bridge
+                                                parapets. When extended, it resembles a conventional steel and timber footbridge,
+                                                and is 12 metres long. To allow the passage of boats, the hydraulic pistons
+                                                are activated and the bridge curls up until its two ends join, to form an
+                                                octagonal shape measuring one half of the waterway's width at that point.
+                                                <br/>
+                                                <br/> The maintenance and opening of the bridge is managed by Merchant Square
+                                                Estates and it is up every Friday at noon. Following maintenance issues in
+                                                2008, the bridge was repaired and was fully operational in April 2009.
+                                            </p>
+                                        </div>
+                                        <button class="accordion_model">Location</button>
+                                        <div class="panel">
+                                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2482.7168614262396!2d-0.17687688441099725!3d51.5184103177193!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761ab2424021af%3A0x6c5ca4c2588572d9!2zQ-G6p3UgY3Xhu5lu!5e0!3m2!1svi!2s!4v1530187836001"
+                                                width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                                        </div>
+                                        <button class="accordion_model">Feedback</button>
+                                        <div class="panel">
+                                            <form method="post" action="" onsubmit="return validateFeedback()">
+                                                <textarea id="comment" rows="10" cols="20" placeholder="Enter Comment" onclick='this.value = ""' required></textarea>
+                                                <button class="button-enter" value="submit">Enter</button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 9. JUSCELINO KUBITSCHEK -->
+                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 filter oldest">
+                    <div class="content">
+                        <img src="./Images/Portfolio/6.jpg" alt="JUSCELINO KUBITSCHEK BRIDGE" class="portfolio">
+                        <h4>JUSCELINO KUBITSCHEK</h4>
+                        <p class="info-main">Juscelino Kubitschek Bridge...</p>
+                        <!-- Trigger the modal with a button -->
+                        <button type="button" class="btn btn-info btn-xs" data-toggle="modal" data-target="#myModal-6">Show All</button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="myModal-6" role="dialog">
+                            <div class="modal-dialog">
+
+                                <!-- Modal content-->
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                        <h4 class="modal-title">Juscelino Kubitschek bridge</h4>
+                                        <img src="./Images/Portfolio/6.jpg">
+                                    </div>
+                                    <div class="modal-body">
+                                        <button class="accordion_model" id="defaultOpen">Information</button>
+                                        <div class="panel">
+                                            <p>
+                                                Juscelino Kubitschek Bridge (Portuguese: Ponte Juscelino Kubitschek), commonly called Ponte JK (English: JK Bridge)[citation
+                                                needed], is a steel and concrete arch bridge across Lake Parano· in BrasÌlia,
+                                                Brazil. It connects the eastern shore of the lake where Lago Sul, Parano·
+                                                and BrasÌlia International Airport are located to BrasÌlia's city center,
+                                                via the Monumental Axis. Opened to traffic on December 15, 2002, its distinctive
+                                                silhouette quickly became a BrasÌlia landmark.
+                                                <br/>
+                                                <br/> The bridge is named after President Juscelino Kubitschek, who served from
+                                                1956 to 1961, and is generally considered the main figure supporting the
+                                                construction of the planned city of BrasÌlia. It was designed by architect
+                                                Alexandre Chan and structural engineer M·rio Vila Verde.
+                                                <br/>
+                                                <br/> Alexandre Chan received the Gustav Lindenthal Medal for the bridge's project
+                                                at the 2003 International Bridge Conference in Pittsburgh. This medal is
+                                                awarded "for a single, recent outstanding achievement showing harmony with
+                                                the environment, aesthetic merit and successful community participation".
+                                                <br/>
+                                                <br/> The bridge was also awarded the 2003 Premio Abcem (ABCEM Award) for "Best
+                                                Steel Work of the Year, Bridges and Highway Overpasses Category", granted
+                                                by the Brazilian Metal Construction Association.
+                                            </p>
+                                        </div>
+                                        <button class="accordion_model">Location</button>
+                                        <div class="panel">
+                                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3838.641411572437!2d-47.832188785121176!3d-15.822850927870878!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935a2369952fc2eb%3A0xe545889e1d00275a!2sJuscelino+Kubitschek+Bridge!5e0!3m2!1svi!2s!4v1530187955140"
+                                                width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                                        </div>
+                                        <button class="accordion_model">Feedback</button>
+                                        <div class="panel">
+                                            <form method="post" action="" onsubmit="return validateFeedback()">
+                                                <textarea id="comment" rows="10" cols="20" placeholder="Enter Comment" onclick='this.value = ""' required></textarea>
+                                                <button class="button-enter" value="submit">Enter</button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 10.BROOKLYN BRIDGE -->
+                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 filter highest">
+                    <div class="content">
+                        <img src="./Images/Portfolio/7.jpg" alt="BROOKLYN BRIDGE" class="portfolio">
+                        <h4>BROOKLYN BRIDGE</h4>
+                        <p class="info-main">The Brooklyn Bridge is a...</p>
+                        <!-- Trigger the modal with a button -->
+                        <button type="button" class="btn btn-info btn-xs" data-toggle="modal" data-target="#myModal-7">Show All</button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="myModal-7" role="dialog">
+                            <div class="modal-dialog">
+
+                                <!-- Modal content-->
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                        <h4 class="modal-title">Brooklyn Bridge</h4>
+                                        <img src="./Images/Portfolio/7.jpg">
+                                    </div>
+                                    <div class="modal-body">
+                                        <button class="accordion_model" id="defaultOpen">Information</button>
+                                        <div class="panel">
+                                            <p>
+                                                The Brooklyn Bridge is a hybrid cable-stayed/suspension bridge in New York City and is one of the oldest roadway bridges
+                                                in the United States. Started in 1869 and completed fourteen years later
+                                                in 1883, it connects the boroughs of Manhattan and Brooklyn, spanning the
+                                                East River. It has a main span of 1,595.5 feet (486.3 m) and was the first
+                                                steel-wire suspension bridge constructed.
+                                                <br/>
+                                                <br/> It was originally called the New York and Brooklyn Bridge and the East River
+                                                Bridge, but it was later dubbed the Brooklyn Bridge, a name coming from an
+                                                earlier January 25, 1867, letter to the editor of the Brooklyn Daily Eagle[8]
+                                                and formally so named by the city government in 1915. Since opening, it has
+                                                become an icon of New York City and was designated a National Historic Landmark
+                                                in 1964 and a National Historic Civil Engineering Landmark in 1972.
+                                            </p>
+                                        </div>
+                                        <button class="accordion_model">Location</button>
+                                        <div class="panel">
+                                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3024.55426448122!2d-73.9981622347544!3d40.705813445931256!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a2343ce7b2b%3A0x2526ddba7abd465c!2zQ-G6p3UgQnJvb2tseW4!5e0!3m2!1svi!2s!4v1530238932801"
+                                                width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                                        </div>
+                                        <button class="accordion_model">Feedback</button>
+                                        <div class="panel">
+                                            <form method="post" action="" onsubmit="return validateFeedback()">
+                                                <textarea id="comment" rows="10" cols="20" placeholder="Enter Comment" onclick='this.value = ""' required></textarea>
+                                                <button class="button-enter" value="submit">Enter</button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--11. MILLAU VIADUCT -->
+                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 filter highest">
+                    <div class="content">
+                        <img src="./Images/Portfolio/8.jpg" alt="MILLAU VIADUCT" class="portfolio">
+                        <h4>MILLAU VIADUCT</h4>
+                        <p class="info-main">The Millau Viaduct is a... </p>
+                        <!-- Trigger the modal with a button -->
+                        <button type="button" class="btn btn-info btn-xs" data-toggle="modal" data-target="#myModal-8">Show All</button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="myModal-8" role="dialog">
+                            <div class="modal-dialog">
+
+                                <!-- Modal content-->
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                        <h4 class="modal-title">Millau Viaduct</h4>
+                                        <img src="./Images/Portfolio/8.jpg">
+                                    </div>
+                                    <div class="modal-body">
+                                        <button class="accordion_model" id="defaultOpen">Information</button>
+                                        <div class="panel">
+                                            <p>
+                                                The Millau Viaduct (French: le Viaduc de Millau, IPA: [vjadyk d? mijo]) is a cable-stayed bridge that spans the gorge valley
+                                                of the Tarn near Millau in southern France. It is the tallest bridge in the
+                                                world, with one mast's summit at 343.0 metres (1,125.3 ft) above the base
+                                                of the structure. In a Franco-British partnership, it was designed by the
+                                                English architect Sir Norman Foster and French structural engineer Michel
+                                                Virlogeux, and as of May 2017 it is the twenty-second highest bridge deck
+                                                in the world, being 270 metres (890 ft) between the road deck and the ground
+                                                below.
+                                                <br/>
+                                                <br/> The Millau Viaduct is part of the A75[4]-A71 autoroute axis from Paris to
+                                                BÈziers and Montpellier. The cost of construction was approximately Ä 394
+                                                million. It was built over three years, formally inaugurated on 14 December
+                                                2004, and opened to traffic two days later on 16 December. The bridge has
+                                                been consistently ranked as one of the great engineering achievements of
+                                                all time, and received the 2006 Outstanding Structure Award from the International
+                                                Association for Bridge and Structural Engineering.
+                                            </p>
+                                        </div>
+                                        <button class="accordion_model">Location</button>
+                                        <div class="panel">
+                                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8421.838963146887!2d3.0151390387309966!3d44.079382379044695!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12b24a24014a7207%3A0x36b7419d6f0fc267!2sViaduc+de+Millau%2C+12100%2C+Ph%C3%A1p!5e0!3m2!1svi!2s!4v1530239242968"
+                                                width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                                        </div>
+                                        <button class="accordion_model">Feedback</button>
+                                        <div class="panel">
+                                            <form method="post" action="" onsubmit="return validateFeedback()">
+                                                <textarea id="comment" rows="10" cols="20" placeholder="Enter Comment" onclick='this.value = ""' required></textarea>
+                                                <button class="button-enter" value="submit">Enter</button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 12.THE U BEIN BRIDGE -->
+                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 filter highest">
+                    <div class="content">
+                        <img src="./Images/Portfolio/9.jpg" alt="THE U BEIN BRIDGE" class="portfolio">
+                        <h4>THE U BEIN BRIDGE</h4>
+                        <p class="info-main">U Bein Bridge is a crossing that...</p>
+                        <!-- Trigger the modal with a button -->
+                        <button type="button" class="btn btn-info btn-xs" data-toggle="modal" data-target="#myModal-9">Show All</button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="myModal-9" role="dialog">
+                            <div class="modal-dialog">
+
+                                <!-- Modal content-->
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                        <h4 class="modal-title">U Bein Bridge</h4>
+                                        <img src="./Images/Portfolio/9.jpg">
+                                    </div>
+                                    <div class="modal-body">
+                                        <button class="accordion_model" id="defaultOpen">Information</button>
+                                        <div class="panel">
+                                            <p>
+                                                U Bein Bridge is a crossing that spans the Taungthaman Lake near Amarapura in Myanmar. The 1.2-kilometre (0.75 mi) bridge
+                                                was built around 1850 and is believed to be the oldest and (once) longest
+                                                teakwood bridge in the world. Construction began when the capital of Ava
+                                                Kingdom moved to Amarapura, and the bridge is named after the mayor who had
+                                                it built. It is used as an important passageway for the local people and
+                                                has also become a tourist attraction and therefore a significant source of
+                                                income for souvenir sellers. It is particularly busy during July and August
+                                                when the lake is at its highest.
+                                                <br/>
+                                                <br/> The bridge was built from wood reclaimed from the former royal palace in
+                                                Inwa. It features 1,086 pillars that stretch out of the water, some of which
+                                                have been replaced with concrete. Though the bridge largely remains intact,
+                                                there are fears that an increasing number of the pillars are becoming dangerously
+                                                decayed. Some have become entirely detached from their bases and only remain
+                                                in place because of the lateral bars holding them together. Damage to these
+                                                supports have been caused by flooding as well as a fish breeding program
+                                                introduced into the lake which has caused the water to become stagnant. The
+                                                Ministry of Cultureís Department of Archaeology, National Museum and Library
+                                                plans to carry out repairs when plans for the work are finalised.
+                                                <br/>
+                                                <br/> From 1 April 2009, eight police force personnel have been deployed to guard
+                                                the bridge. Their presence is aimed at reducing anti-social behaviour and
+                                                preventing criminal activities, with the first arrest coming in September
+                                                2013 when two men were reported for harassing tourists.
+                                            </p>
+                                        </div>
+                                        <button class="accordion_model">Location</button>
+                                        <div class="panel">
+                                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3702.116806732662!2d96.05563121483979!3d21.89157736313895!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30cb0d287da7099d%3A0x7be9ef84f54d9cf5!2sPont+U-Bein+-+Amarapura%2C+Mandalay%2C+Mi-an-ma+(Mi%E1%BA%BFn+%C4%90i%E1%BB%87n)!5e0!3m2!1svi!2s!4v1530239576952"
+                                                width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                                        </div>
+                                        <button class="accordion_model">Feedback</button>
+                                        <div class="panel">
+                                            <form method="post" action="" onsubmit="return validateFeedback()">
+                                                <textarea id="comment" rows="10" cols="20" placeholder="Enter Comment" onclick='this.value = ""' required></textarea>
+                                                <button class="button-enter" value="submit">Enter</button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- END GRID -->
+            </div>
+            <!-- END MAIN -->
+        </div>
+    </div>
+    <!-- End Section 1 -->
+    <!-- Begin Section 2 Timeline-->
+    <div id="timeline" class="container-fluid">
+        <h2 style="text-align: center;">Do you know 4 secrets of the Amazing Brigde</h2>
+        <div class="accordion">
+            <ul>
+                <li>
+                    <div>
+                        <h2>Longest Gate</h2>
+                        <p>The Golden Gate Bridge is a suspension bridge spanning the Golden Gate</p>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <h2>Highest Gate</h2>
+                        <p>The Golden Gate Bridge is a suspension bridge spanning the Golden Gate</p>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <h2>Tallest Gate</h2>
+                        <p>The Golden Gate Bridge is a suspension bridge spanning the Golden Gate</p>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <h2>Oldest Gate</h2>
+                        <p>The Golden Gate Bridge is a suspension bridge spanning the Golden Gate</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- End Section 2 Timeline -->
+    <!-- Begin section 4 Booking -->
+    <div id="booking" class="container-fluid">
+        <div class="row" id="tilte-contact">
+            <div class="col-lg-12 text-center">
+                <h2 class="section-heading text-uppercase">Booking Ticket Now</h2>
+            </div>
+        </div>
+        <form name="sendBooking" method="post" action="" onsubmit="return validateForm()">
+            <div class="row booking-now">
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                    Arrival Date
+                    <input type="date" id="date" value="" onclick='this.value = ""'>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                    Location
+                    <br>
+                    <input type="text" id="location" placeholder="Location" onclick='this.value = ""'>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                    Person
+                    <br>
+                    <input type="number" id="number" placeholder="1" onclick='this.value = ""'>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                    Traffic Type
+                    <Select>
+                        <option>Air Plane</option>
+                        <option>Bus</option>
+                    </Select>
+                </div>
+                <div class="col-lg-12 text-center submit">
+                    <input class="btn btn-primary btn-xl text-uppercase" value="Book" type="submit">
+                </div>
+            </div>
+        </form>
+    </div>
+    <!-- End section 4 Booking -->
+    <!-- Begin Section 3 Team-->
+    <div id="our-team" class="container-fluid">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2>Our Amazing Team</h2>
+                <h3>We are a Dev Team</h3>
+            </div>
+        </div>
+        <div class="row" id="avatar" text-center>
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                <img src="./Images/Avatar/LTDat.jpg" alt="LTDat">
+                <h3>Dev Member</h3>
+                <ul class="list-inline social-buttons">
+                    <li class="list-inline-item">
+                        <a href="mailto:example@gmail.com">
+                            <i class="fa fa-envelope"></i>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="https://www.facebook.com/">
+                            <i class="fa fa-facebook"></i>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="tel:+8400000000">
+                            <i class="fa fa-phone"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                <img src="./Images/Avatar/BVHuong.jpg" alt="BVHuong">
+                <h3>Team Leader</h3>
+                <ul class="list-inline social-buttons">
+                    <li class="list-inline-item">
+                        <a href="mailto:example@gmail.com">
+                            <i class="fa fa-envelope"></i>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="https://www.facebook.com/">
+                            <i class="fa fa-facebook"></i>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="tel:+8400000000">
+                            <i class="fa fa-phone"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                <img src="./Images/Avatar/NDPhuong.jpg" alt="NDPhuong">
+                <h3>Dev Member</h3>
+                <ul class="list-inline social-buttons">
+                    <li class="list-inline-item">
+                        <a href="mailto:example@gmail.com">
+                            <i class="fa fa-envelope"></i>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="https://www.facebook.com/">
+                            <i class="fa fa-facebook"></i>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="tel:+8400000000">
+                            <i class="fa fa-phone"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- End Section 3 Team -->
+
+    <!-- Begin section Contact Us -->
+    <section id="contact">
+        <div class="container-fluid">
+            <div class="row" id="tilte-contact">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading text-uppercase">Contact Us</h2>
+                    <h3 class="section-subheading text-muted">More detail please contact us.</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6" ng-app="validationApp" ng-controller="mainController">
+                    <form id="contactForm" name="sentMessage" ng-submit="submitForm(sentMessage.$valid)" novalidate>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <input class="form-control" name="name" id="name" type="text" placeholder="Your Name *" ng-model="name" onclick='this.value = ""' required>
+                                    <span class="text-danger" ng-show="sentMessage.name.$touched && sentMessage.name.$invalid">
+                                        Please enter your Name.
+                                    </span>
+                                </div>
+                                <div class="form-group">
+                                    <input class="form-control" name="email" id="email" type="email" placeholder="Your Email *" ng-model="email" onclick='this.value = ""' required>
+                                    <span class="text-danger" ng-show="sentMessage.email.$touched && sentMessage.email.$invalid">
+                                        Please enter your Email.
+                                    </span>
+                                </div>
+                                <div class="form-group">
+                                    <input class="form-control" name="phone" id="phone" type="tel" placeholder="Your Phone Number *" ng-model="phone" onclick='this.value = ""' required>
+                                    <span class="text-danger" ng-show="sentMessage.phone.$touched && sentMessage.phone.$invalid">
+                                        Please enter your Phone Number.
+                                    </span>
+                                </div>
+                                <div class="form-group">
+                                    <textarea class="form-control" name="message" id="message" placeholder="Your Message *" ng-model="message" onclick='this.value = ""' required></textarea>
+                                    <span class="text-danger" ng-show="sentMessage.message.$touched && sentMessage.message.$invalid">
+                                        Please enter your Message.
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="clearfix"></div>
+                            <div class="col-lg-12 text-center">
+                                <button id="sendMessageButton" type="submit" class="btn btn-primary btn-xl text-uppercase" ng-disabled=" 
+                                sentMessage.email.$touched && sentMessage.email.$invalid ||  
+                                sentMessage.name.$touched && sentMessage.name.$invalid || 
+                                sentMessage.phone.$touched && sentMessage.phone.$invalid || 
+                                sentMessage.message.$touched && sentMessage.message.$invalid">Send Message</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-lg-6 col-sm-12 col-md-12 col-xs-12">
+                    <div class="my-location">
+                        <div id="map"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <!-- End section Contact Us -->
+    <!--Begin Footer -->
+    <footer>
+        <script type="text/javascript" src="./js/tab.js"></script>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <span class="copyright">Copyright &copy;
+                        <b>PHD</b> Website 2018</span>
+                </div>
+                <div class="col-md-6">
+                    <ul class="list-inline quicklinks">
+                        <li class="list-inline-item">
+                            <a href="#page-top">Privacy Policy</a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#page-top">Terms of Use</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- End Footer -->
+</body>
+
+</html>

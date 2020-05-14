@@ -1,0 +1,859 @@
+    body {
+        position: relative;
+    }
+
+    .navbar-nav {
+        float: right;
+    }
+
+    .navbar-brand {
+        color: #fed136 !important;
+        font-family: 'Kaushan Script', 'Helvetica Neue', Helvetica, Arial, cursive !important;
+        font-size: 30px;
+    }
+
+    .navbar-default .navbar-nav>li>a {
+        color: #ffffff;
+        font-size: 18px;
+    }
+
+    .navbar-default .navbar-nav>li>a:hover {
+        color: #fed136;
+    }
+
+    @media screen and (max-width: 480px) {
+        div#navbar {
+            background-color: #000;
+            text-align: center;
+        }
+        .navbar-nav {
+            float: none;
+        }
+        .navbar-brand {
+            color: #fed136 !important;
+            font-family: 'Kaushan Script', 'Helvetica Neue', Helvetica, Arial, cursive !important;
+            font-size: 25px;
+        }
+        nav.navbar.navbar-default.navbar-fixed-top {
+            background-color: #000;
+            text-align: center;
+        }
+    }
+
+    /* Style Modal */
+
+    .modal-dialog {
+        width: 90% !important;
+        margin: 30px auto;
+    }
+
+    /* Add Carousel */
+
+    .carousel-inner {
+        max-height: 1000px;
+    }
+
+    @media screen and (max-width: 480px) {
+        div#navbar {
+            background-color: #000;
+            text-align: center;
+        }
+        .navbar-nav {
+            float: none;
+        }
+        .carousel-indicators {
+            bottom: 0;
+        }
+        .carousel-caption {
+            padding-bottom: 10px;
+        }
+        .carousel-caption p {
+            display: none;
+        }
+        .carousel-caption h1 {
+            font-size: 25px;
+        }
+        .main h2 {
+            font-size: 25px;
+        }
+        #timeline {
+            padding-top: 50px;
+        }
+        #timeline h2 {
+            font-size: 25px;
+        }
+        section h3.section-subheading {
+            margin-bottom: 0;
+        }
+    }
+
+    /* Change background navbar when scroll */
+
+    .navbar-default {
+        background-color: transparent;
+        border-color: transparent;
+    }
+
+    .navbar-fixed-top.scrolled {
+        background-color: #000 !important;
+        transition: background-color 1000ms linear;
+    }
+
+    .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover {
+        background-color: #fed136;
+    }
+
+    .navbar-default .navbar-nav>li>a:hover {
+        color: #fed136
+    }
+
+    #amazing-bridge {
+        padding-top: 50px;
+        height: 100%;
+        color: #fff;
+        background-image: url(./Images/Background/bluesky.jpg);
+        background-size: cover
+    }
+
+    #timeline {
+        padding-top: 100px;
+        height: 100%;
+        color: #fff;
+        background-image: url(./Images/Background/UnderSea.jpg);
+        background-size: cover
+    }
+
+    #our-team {
+        padding-top: 50px;
+        height: 100%;
+        color: #fff;
+        background-image: url(./Images/Background/night-sky.jpg);
+        background-size: cover
+    }
+
+    #section4 {
+        padding-top: 50px;
+        height: 100%;
+        color: #fff;
+        background-color: #00bcd4;
+        background-size: cover
+    }
+
+    * {
+        box-sizing: border-box;
+    }
+
+    /* Center website */
+
+    .main {
+        max-width: 1000px;
+        margin: auto;
+    }
+
+    h1 {
+        font-size: 50px;
+        word-break: break-all;
+    }
+
+    .row {
+        margin: 10px -16px;
+    }
+
+    /* Add padding BETWEEN each column */
+
+    .row, .row>.column {
+        padding: 8px;
+    }
+
+    /* Create three equal columns that floats next to each other */
+
+    .column {
+        display: none;
+        /* Hide all elements by default */
+    }
+
+    /* Clear floats after rows */
+
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    /* Content */
+
+    .content {
+        box-shadow: 0 10px 10px rgba(0, 0, 0, 0.3);
+        background-color: white;
+        padding-bottom: 10px;
+        border: 1px solid;
+    }
+
+    .content img {
+        width: 100%
+    }
+    .modal-header img {
+        width: 70%;
+    }
+    /* The "show" class is added to the filtered elements */
+
+    .show {
+        display: block;
+    }
+
+    /* Style the buttons */
+
+    .btn {
+        border: none;
+        outline: none;
+        padding: 12px 16px;
+        background-color: white;
+        cursor: pointer;
+        color: #000;
+    }
+
+    .btn:hover {
+        background-color: #ddd;
+    }
+
+    .btn.active {
+        background-color: #fed136;
+        color: white;
+    }
+
+    .main h4 {
+        color: #000;
+    }
+
+    .main p {
+        color: #000;
+    }
+
+    p.info-main {
+        color: #000;
+        text-align: center !important;
+    }
+
+    .main {
+        text-align: center;
+    }
+
+    /* Button Show All */
+
+    button.btn.btn-info.btn-xs {
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+        border-radius: 6px;
+        border: #555 1px solid;
+        outline: none
+    }
+
+    .btn:hover {
+        background-color: lightgray;
+    }
+
+    /* Style Form Contact Us */
+
+    #tilte-contact {
+        margin: 0;
+    }
+
+    #tilte-contact h3 {
+        margin: 0
+    }
+
+    section {
+        padding: 100px 0;
+    }
+
+    section h2.section-heading {
+        font-size: 40px;
+        margin-top: 0;
+        margin-bottom: 15px;
+    }
+
+    section h3.section-subheading {
+        font-size: 16px;
+        font-weight: 400;
+        font-style: italic;
+        margin-bottom: 50px;
+        text-transform: none;
+        font-family: 'Droid Serif', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    }
+
+    @media (min-width: 768px) {
+        section {
+            padding: 45px 0;
+        }
+    }
+
+    section#contact {
+        background-color: #212529;
+        background-image: url("./Images/Background/map-image.png");
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    section#contact .section-heading {
+        color: #fff;
+    }
+
+    section#contact .form-group {
+        margin-bottom: 25px;
+    }
+
+    section#contact .form-group input, section#contact .form-group textarea {
+        padding: 20px;
+        padding-left: 55px;
+    }
+
+    section#contact .form-group input.form-control {
+        height: auto;
+    }
+
+    section#contact .form-group textarea.form-control {
+        height: 148px;
+    }
+
+    section#contact .form-control:focus {
+        border-color: #fed136;
+        box-shadow: none;
+    }
+
+    section#contact ::-webkit-input-placeholder {
+        font-weight: 700;
+        color: #ced4da;
+        font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    }
+
+    section#contact :-moz-placeholder {
+        font-weight: 700;
+        color: #ced4da;
+        /* Firefox 18- */
+        font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    }
+
+    section#contact ::-moz-placeholder {
+        font-weight: 700;
+        color: #ced4da;
+        /* Firefox 19+ */
+        font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    }
+
+    section#contact :-ms-input-placeholder {
+        font-weight: 700;
+        color: #ced4da;
+        font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    }
+
+    /* Icon Input Fields */
+
+    #name {
+        background-image: url(./Images/Icon/person.png);
+        background-repeat: no-repeat;
+        background-position-y: center;
+        background-position-x: 10px;
+        background-size: 40px 40px;
+    }
+
+    #email {
+        background-image: url(./Images/Icon/mail.png);
+        background-repeat: no-repeat;
+        background-position-y: center;
+        background-position-x: 10px;
+        background-size: 40px 30px;
+    }
+
+    #phone {
+        background-image: url(./Images/Icon/mobile.png);
+        background-repeat: no-repeat;
+        background-position-y: center;
+        background-position-x: 10px;
+        background-size: 40px 32px;
+    }
+
+    #message {
+        background-image: url(./Images/Icon/message.png);
+        background-repeat: no-repeat;
+        background-position-y: 16px;
+        background-position-x: 10px;
+        background-size: 40px 30px;
+    }
+
+    /* Button Send */
+
+    .btn {
+        font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        font-weight: 700;
+    }
+
+    .btn-xl {
+        font-size: 18px;
+        padding: 20px 40px;
+    }
+
+    .btn-primary {
+        background-color: #fed136;
+        border-color: #fed136;
+    }
+
+    .btn-primary:active, .btn-primary:focus, .btn-primary:hover {
+        background-color: #fec810 !important;
+        border-color: #fec810 !important;
+        color: white;
+        box-shadow: 0 10px 10px rgba(0, 0, 0, 0.3)
+    }
+
+    .btn-primary:active, .btn-primary:focus {
+        box-shadow: 0 0 0 0.2rem rgba(254, 209, 55, 0.5) !important;
+    }
+
+    .btn-info.focus, .btn-info:focus {
+        background-color: #fed136
+    }
+
+    /* Style Result Sent Message */
+
+    .result-message {
+        width: 100%;
+        background-color: yellowgreen;
+        height: 50px;
+        border-radius: 4px
+    }
+
+    /* Style Alert Error Form Contact Us */
+
+    .text-danger {
+        padding-left: 40px;
+        color: red;
+        font-size: 18px;
+    }
+
+    /* Style Location */
+
+    .my-location {
+        color: white;
+    }
+
+    /* Style Footer */
+
+    footer {
+        padding: 10px 0;
+        text-align: center;
+        width: 100%;
+        color: snow;
+        background-color: black;
+    }
+
+    footer span.copyright {
+        line-height: 40px;
+        text-transform: none;
+        font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        font-size: 20px;
+    }
+
+    footer ul.quicklinks {
+        line-height: 40px;
+        margin-bottom: 0;
+        text-transform: none;
+        font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        font-size: 20px;
+    }
+
+    /* Back to top button */
+
+    #button {
+        display: inline-block;
+        background-color: #FF9800;
+        width: 50px;
+        height: 50px;
+        text-align: center;
+        border-radius: 4px;
+        position: fixed;
+        bottom: 30px;
+        right: 30px;
+        transition: background-color .3s, opacity .5s, visibility .5s;
+        opacity: 0;
+        visibility: hidden;
+        z-index: 1000;
+    }
+
+    #button::after {
+        content: "\f062";
+        font-family: FontAwesome;
+        font-weight: normal;
+        font-style: normal;
+        font-size: 2em;
+        line-height: 50px;
+        color: #fff;
+    }
+
+    #button:hover {
+        cursor: pointer;
+        background-color: #333;
+        text-decoration: none;
+    }
+
+    #button:active {
+        background-color: #555;
+    }
+
+    #button.show {
+        opacity: 0.8;
+        visibility: visible;
+    }
+
+    @media (min-width: 500px) {
+        #button {
+            margin: 30px;
+        }
+    }
+
+    /* Add animation portfolio */
+
+    .filter {
+        padding-bottom: 20px;
+    }
+
+    .filter-button {
+        font-size: 18px;
+        border: 1px solid #fed136;
+        border-radius: 5px;
+        text-align: center;
+        color: #fed136;
+        margin-bottom: 30px;
+        box-shadow: 0 10px 10px rgba(0, 0, 0, 0.3)
+    }
+
+    .filter-button:hover {
+        font-size: 18px;
+        border: none;
+        border-radius: 5px;
+        text-align: center;
+        color: #ffffff;
+        background-color: #fed136;
+        box-shadow: #f0e76a 2px 2px
+    }
+
+    .btn-default:active .filter-button:active {
+        background-color: #fed136;
+        color: white;
+    }
+
+    .port-image {
+        width: 100%;
+    }
+
+    .btn-default.active, .btn-default:active, .open>.dropdown-toggle.btn-default, .btn-default.focus, .btn-default:focus {
+        color: #ffffff !important;
+        background-color: #fec810 !important;
+    }
+
+    /* Section 2 */
+
+    .accordion {
+        width: 100%;
+        max-width: 1080px;
+        height: 500px;
+        overflow: hidden;
+        margin: 60px auto;
+    }
+
+    .accordion ul {
+        width: 100%;
+        display: table;
+        table-layout: fixed;
+        margin: 0;
+        padding: 0;
+    }
+
+    .accordion ul li {
+        display: table-cell;
+        vertical-align: bottom;
+        position: relative;
+        width: 25%;
+        height: 420px;
+        background-repeat: no-repeat;
+        background-position: center center;
+        transition: all 500ms ease;
+        background-size: cover;
+    }
+
+    .accordion ul li div {
+        display: block;
+        overflow: hidden;
+        width: 100%;
+    }
+
+    .accordion ul li div a {
+        display: block;
+        height: 250px;
+        width: 100%;
+        position: relative;
+        z-index: 3;
+        vertical-align: bottom;
+        padding: 15px 20px;
+        box-sizing: border-box;
+        color: #fff;
+        text-decoration: none;
+        font-family: Open Sans, sans-serif;
+        transition: all 200ms ease;
+    }
+
+    .accordion ul li div a * {
+        opacity: 0;
+        margin: 0;
+        width: 100%;
+        text-overflow: ellipsis;
+        position: relative;
+        z-index: 5;
+        white-space: nowrap;
+        overflow: hidden;
+        -webkit-transform: translateX(-20px);
+        transform: translateX(-20px);
+        -webkit-transition: all 400ms ease;
+        transition: all 400ms ease;
+    }
+
+    .accordion ul li div a h2 {
+        font-family: Montserrat, sans-serif;
+        text-overflow: clip;
+        font-size: 24px;
+        text-transform: uppercase;
+        margin-bottom: 2px;
+        top: 160px;
+    }
+
+    .accordion ul li div a p {
+        top: 160px;
+        font-size: 13.5px;
+    }
+
+    .accordion ul li:nth-child(1) {
+        background-image: url("./Images/Portfolio/10.jpg");
+    }
+
+    .accordion ul li:nth-child(2) {
+        background-image: url("./Images/Portfolio/8.jpg");
+    }
+
+    .accordion ul li:nth-child(3) {
+        background-image: url("./Images/Portfolio/1.JPG");
+    }
+
+    .accordion ul li:nth-child(4) {
+        background-image: url("./Images/Portfolio/4.jpg");
+    }
+
+    .accordion ul:hover li {
+        width: 8%;
+    }
+
+    .accordion ul:hover li:hover {
+        width: 60%;
+    }
+
+    .accordion ul:hover li:hover a {
+        background: rgba(0, 0, 0, 0.4);
+    }
+
+    .accordion ul:hover li:hover a * {
+        opacity: 1;
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+
+    
+
+    /* Section 4 - Contact Us */
+
+    #map {
+        width: 100%;
+        height: 100%;
+        border-radius: 5px;
+    }
+
+    /*style the p tag*/
+
+    .gm-style .gm-style-iw #google-popup p {
+        color: #000;
+    }
+
+    .my-location {
+        padding-top: 18px;
+        height: 427px;
+    }
+
+    /* Style Our Team */
+
+    #avatar {
+        padding: 20px 50px 50px 50px
+    }
+
+    #our-team img {
+        border-radius: 50%;
+        height: auto;
+        width: 80%
+    }
+
+    #our-team {
+        width: 100%;
+        height: 100%;
+        text-align: center
+    }
+
+    #our-team h3 {
+        font-weight: 300
+    }
+
+    ul.social-buttons {
+        margin-bottom: 0;
+        padding-top: 20px;
+    }
+
+    ul.social-buttons li a {
+        font-size: 20px;
+        line-height: 40px;
+        display: block;
+        width: 40px;
+        height: 40px;
+        -webkit-transition: all 0.3s;
+        -moz-transition: all 0.3s;
+        transition: all 0.3s;
+        color: white;
+        border-radius: 100%;
+        outline: none;
+        background-color: #212529;
+    }
+
+    ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons li a:hover {
+        background-color: #fed136;
+    }
+
+    /* Style the tab */
+
+    /* Verical TAb */
+
+    .accordion_model {
+        background-color: #eee;
+        color: #444;
+        cursor: pointer;
+        padding: 18px;
+        width: 100%;
+        max-height: 50px;
+        border: none;
+        text-align: left;
+        outline: none;
+        font-size: 15px;
+        transition: 0.4s;
+    }
+
+    .active, .accordion_model:hover {
+        background-color: #ccc;
+    }
+
+    .panel {
+        padding: 0 18px;
+        display: none;
+        background-color: white;
+        overflow: hidden;
+    }
+
+    textarea#words {
+        color: #000000;
+        height: 50px;
+        width: 100%;
+    }
+
+    .button-enter {
+        background-color: #474747;
+        border-radius: 6px;
+        font-size: 20px;
+        padding: 10px 25px;
+        box-shadow: 4px 4px rgba(0, 0, 0, 0.3);
+        outline: none;
+        display: block;
+        margin: 0 auto
+    }
+
+    .button-enter:hover {
+        background-color: #fec810;
+        color: white
+    }
+
+    .main p {
+        text-align: justify
+    }
+
+    /* Style textarea feedback */
+
+    #comment {
+        width: 70%;
+        color: black;
+        display: block;
+        margin: 0 auto
+    }
+
+    #result {
+        display: block;
+        margin: 0 auto;
+        width: 50%
+    }
+
+    /* Section Booking */
+
+    input[type="number"], input[type="date"], select, input[type="text"] {
+        width: 100%;
+        color: #000;
+    }
+
+    #booking {
+        padding: 100px;
+        background-image: url('./Images/Background/airplane.png');
+        background-size: cover;
+        color: #fff;
+    }
+
+    .booking-now {
+        background-color: rgba(0, 0, 0, 0.3);
+        padding: 100px;
+    }
+
+    .submit {
+        padding-top: 20px;
+    }
+
+    input[type="submit"] {
+        background-color: #fed136;
+        border-color: #fed136;
+        font-size: 18px;
+        padding: 20px 40px;
+        color: #000;
+        font-weight: 700;
+    }
+    @media screen and (max-width: 600px) {
+        body {
+            margin: 0;
+        }
+        .accordion {
+            height: auto;
+        }
+        .accordion ul li, .accordion ul li:hover, .accordion ul:hover li, .accordion ul:hover li:hover {
+            position: relative;
+            display: table;
+            table-layout: fixed;
+            width: 100%;
+            -webkit-transition: none;
+            transition: none;
+        }
+        #booking {
+            padding: 10px;
+            line-height: 30px;
+        }
+
+        .booking-now {
+            padding: 10px;
+        }
+        h2.section-heading.text-uppercase {
+            font-size: 26px;
+        }
+    }
